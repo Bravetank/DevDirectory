@@ -1,0 +1,10 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.rowDevDetails {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
