@@ -8,11 +8,13 @@ public class Developer {
     private String imageURL;
     private String language;
 
+
     public Developer(String name, String city, String imageURL, String language) {
         this.name = name;
         this.city = city;
         this.imageURL = imageURL;
         this.language = language;
+
     }
 
     public String getName() {
@@ -43,9 +45,8 @@ public class Developer {
         return language;
     }
 
-    public void setLanguages(String mainProgrammingLanguage) {
+    public void setLanguage(String language) {
         this.language = language;
     }
-
 
 }

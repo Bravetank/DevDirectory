@@ -39,20 +39,19 @@
 </nav>
 
 
-    <H1>Welcome to Dev Directory!</H1>
+<H1 th:text = "${skillset.language}"></H1>
 
-    <div class = "container">
-        <div class = "row">
-            <!--Loop - uses the "allDevelopers" list from Dev Controller/Dev Repository -->
-            <div th:each="developer : ${developers}"
-                 class = "col-md-3">
-                <a th:href="@{'/developer/' + ${developer.name}}">
-                <h4 th:text = "${developer.name}"></h4>
-                <img th:src = "${developer.imageURL}"/>
-                </a>
-        </div>
-      </div>
+<div class="row">
+    <div th:each="developer : ${developers}"
+         class = "col-md-3">
+        <a th:href="@{'/developer/' + ${developer.name}}">
+            <h4 th:text = "${developer.name}"></h4>
+            <img th:src = "${developer.imageURL}"/>
+        </a>
+
     </div>
+</div>
+
 
 </body>
 </html>
